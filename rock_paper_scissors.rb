@@ -5,7 +5,7 @@
 player_wins = 0
 ai_wins = 0
 
-#Do Until loop that determines when either Player 1 or the AI has reached 3 wins
+#While do loop that determines when either Player 1 or the AI has reached 3 wins
 
 while player_wins != 3 || ai_wins != 3 do
 
@@ -15,10 +15,25 @@ puts "2 = Paper"
 puts "3 = Scissors"
 
 
+#loop do for when a user gives incorrect response
+
+loop do
+
 #Prompts the player for input
 user_answer = gets.chomp
-print user_answer
-
 
 #Verifies input is valid
+if user_answer == '1' || user_answer == '2' || user_answer == '3'
+	break
+else
+	puts 'This is not a valid answer'
+end
+
+
+
+end
+
+
+
+
 end
