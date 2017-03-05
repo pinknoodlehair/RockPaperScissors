@@ -5,34 +5,54 @@
 player_wins = 0
 ai_wins = 0
 
-#While do loop that determines when either Player 1 or the AI has reached 3 wins
 
-while player_wins != 3 || ai_wins != 3 do
-
-#Tells the player the input.
-puts "1 = Rock" 
-puts "2 = Paper"
-puts "3 = Scissors"
+	#While do loop that determines when either Player 1 or the AI has reached 3 wins
+	while player_wins != 3 || ai_wins != 3 do
 
 
-#loop do for when a user gives incorrect response
+		#Tells the player the input.
 
-loop do
+		puts "1 = Rock" 
 
-#Prompts the player for input
-user_answer = gets.chomp
+		puts "2 = Paper"
 
-#Verifies input is valid
-if user_answer == '1' || user_answer == '2' || user_answer == '3'
-	break
-else
-	puts 'This is not a valid answer'
-end
+		puts "3 = Scissors"
 
 
 
-end
+			#Prompts the player for input and checks if input is valid
 
+			loop do
+
+			user_answer = gets.chomp
+
+
+				#Verifies input is valid
+
+				if user_answer == '1' || user_answer == '2' || user_answer == '3'
+
+
+				else
+
+				puts 'This is not a valid answer'
+
+				break
+
+				end
+
+
+		#Rolls either Rock, Paper, or Scissors for the AI
+
+		@roll_array = [1, 2, 3]
+
+		random_roll = @roll_array.sample
+
+		print random_roll
+
+		# Compares Player and AI rolls
+
+
+	end
 
 
 
