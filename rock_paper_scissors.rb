@@ -43,13 +43,13 @@ ai_wins = 0
 
 		#Rolls either Rock, Paper, or Scissors for the AI
 
-		@roll_array = [1, 2, 3]
+		roll_array = [1, 2, 3]
 
-		random_roll = @roll_array.sample
+		random_roll = roll_array.sample
 
-		print random_roll
 
-		# Compares Player and AI rolls
+	# Compares Player and AI rolls
+
 
 
 	end
