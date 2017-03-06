@@ -43,14 +43,28 @@ ai_wins = 0
 
 		#Rolls either Rock, Paper, or Scissors for the AI
 
-		roll_array = [1, 2, 3]
+		roll_array = ['1', '2', '3']
 
 		random_roll = roll_array.sample
 
 
-	# Compares Player and AI rolls
+	# Compares Player and AI rolls to determine if it is a draw
+
+	if random_roll == user_answer
+
+		puts "Draw!"
+	else
+		
+	end
 
 
+		#Determines whether Player or AI earns a point
+
+		if (random_roll == '1' && user_answer == '3') 
+			ai_wins += 1
+
+			print ai_wins
+		end
 
 	end
 
